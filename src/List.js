@@ -14,9 +14,11 @@ function List(props) {
             key={card.id}
             title={card.title}
             content={card.content}
+            onDeleteCard={props.onDeleteCard}
           />
         )}
         <button 
+          onClick={props.onRandomCard}
           type='button' 
           className='List-add-button'
         >
